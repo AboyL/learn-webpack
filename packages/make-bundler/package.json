@@ -1,0 +1,12 @@
+{
+  "name": "make-bundler",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build-dev": "npx webpack --mode=development",
+    "build": "npx webpack",
+    "my-build-dev": "node --inspect --inspect-brk bundler.js",
+    "my-build": "node bundler.js"
+  }
+}
