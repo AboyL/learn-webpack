@@ -1,0 +1,12 @@
+body {
+  background: red;
+}
+
+.test {
+  width: 100px;
+  height: 100px;
+  margin: 100px auto;
+  background: gray;
+  padding: 100px;
+  background-image: url('./assets/duck.png');
+}
