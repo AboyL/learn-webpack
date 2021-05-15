@@ -1,0 +1,30 @@
+{
+  "name": "my-webpack",
+  "version": "1.0.0",
+  "description": "> TODO: description",
+  "author": "lijunfeng <junfeng.li@hand-china.com>",
+  "homepage": "https://github.com/AboyL/learn-webpack#readme",
+  "license": "ISC",
+  "main": "src/index",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "registry": "http://nexus.saas.hand-china.com/content/groups/hzero-npm-group/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AboyL/learn-webpack.git"
+  },
+  "scripts": {
+    "build": "webpack",
+    "serve": "webpack serve"
+  },
+  "bugs": {
+    "url": "https://github.com/AboyL/learn-webpack/issues"
+  }
+}
