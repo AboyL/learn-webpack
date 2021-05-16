@@ -1,2 +1,4 @@
-export default 'test_es_modules'
-export const test = 'test'
+module.exports = {
+  name: "title_name",
+  age: "title_age",
+};

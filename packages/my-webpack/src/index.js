@@ -1,3 +1,3 @@
-import module, { test } from './module'
-console.log(module)
-console.log(test)
+import name, { age } from "./module";
+console.log(name);
+console.log(age);
