@@ -1,3 +1,5 @@
-import name, { age } from "./module";
-console.log(name);
-console.log(age);
+setTimeout(() => {
+  import('./module').then(res => {
+    console.log('res', res)
+  })
+}, 1000);
