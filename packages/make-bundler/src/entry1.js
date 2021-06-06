@@ -1,2 +1,2 @@
 import TEST_2 from './dep2.js'
-console.log(TEST_2)
+console.log('entry1' + TEST_2)
