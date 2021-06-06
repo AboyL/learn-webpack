@@ -1,2 +1,2 @@
-import TEST from './dep1.js'
-export default TEST + 2
+const dep1 = require('./dep1');
+module.exports = dep1 + 2

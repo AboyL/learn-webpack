@@ -1,2 +1,2 @@
-import TEST_2 from './dep2.js'
-console.log('entry2' + TEST_2)
+const dep2 = require('./dep2');
+console.log('entry2' + dep2)
