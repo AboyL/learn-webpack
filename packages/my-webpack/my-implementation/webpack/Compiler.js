@@ -135,8 +135,9 @@ class Compiler {
           //判断现有的已经编译过的modules里有没有这个模块，如果有，不用添加依赖了，如果没有则需要添加
           const alreadyModule = Array.from(this.modules).find(module => module.id === depModuleId);
           //如果已经编译过的模块的里不包含这个依赖模块的话才添加，如果已经包含了，就不要添加了
+          // 这个路径应该是一个绝对路径
           if (!alreadyModule) {
-            module.dependencies.push(depModulePath)
+            module.dependencies.push({depModulePath})
           } else {
             // 修改chunk
             alreadyModule.chunks = Array.from(new Set([...(alreadyModule.chunks || []), entryName]))

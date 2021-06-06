@@ -1,0 +1,33 @@
+{
+  "outputPath": "xxx/dist",
+  "assets": {
+    "key": "code"
+  },
+  "entries": [
+    {
+      "id": "相对根目录的路径",
+      "name": "entry name",
+      "dependencies": [
+        "依赖的绝对路径"
+      ]
+    }
+  ],
+  "chunks": [
+    {
+      "name":"文件名称",
+      "entryModule":"object对应的入口模块",
+      "modules":["属于这个chunk的模块"],
+      "_source": "源代码"
+    }
+  ],
+  "modules": [
+    {
+      "name": "./src/entry1.js",
+      "id": "./src/entry1.js",
+      "chunks": [
+        "entry1"
+      ],
+      "_source": "源代码"
+    }
+  ]
+}
