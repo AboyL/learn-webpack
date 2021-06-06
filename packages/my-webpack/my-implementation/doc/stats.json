@@ -1,0 +1,103 @@
+{
+  "hash": "d65c4bb87b5a86aafa02",
+  "outputPath": "/Users/lijunfeng/Desktop/learn/learn-webpack/packages/my-webpack/my-implementation/dist",
+  "assetsByChunkName": {
+    "entry1": [
+      "entry1.js"
+    ],
+    "entry2": [
+      "entry2.js"
+    ]
+  },
+  "assets": [
+    {
+      "type": "asset",
+      "name": "entry2.js",
+      "chunks": [
+        "entry2"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "entry1.js",
+      "chunks": [
+        "entry1"
+      ]
+    }
+  ],
+  "chunks": [
+    {
+      "names": [
+        "entry1"
+      ],
+      "files": [
+        "entry1.js"
+      ],
+      "id": "entry1",
+      "origins": [
+        {
+          "module": "",
+          "moduleIdentifier": "",
+          "moduleName": "",
+          "loc": "entry1",
+          "request": "./test-code/index.js"
+        }
+      ]
+    },
+    {
+      "names": [
+        "entry2"
+      ],
+      "idHints": [],
+      "runtime": [
+        "entry2"
+      ],
+      "files": [
+        "entry2.js"
+      ],
+      "hash": "dbd60d0870d9556c6680",
+      "id": "entry2",
+      "origins": [
+        {
+          "module": "",
+          "moduleIdentifier": "",
+          "moduleName": "",
+          "loc": "entry2",
+          "request": "./test-code/index2.js"
+        }
+      ]
+    }
+  ],
+  "modules": [
+    {
+      "name": "./test-code/index.js",
+      "id": "./test-code/index.js",
+      "chunks": [
+        "entry1"
+      ]
+    },
+    {
+      "id": "./test-code/index2.js",
+      "chunks": [
+        "entry2"
+      ]
+    },
+    {
+      "name": "./test-code/module.js",
+      "id": "./test-code/module.js",
+      "chunks": [
+        "entry1",
+        "entry2"
+      ]
+    },
+    {
+      "name": "./test-code/module2.js",
+      "id": "./test-code/module2.js",
+      "chunks": [
+        "entry1",
+        "entry2"
+      ],
+      "assets": []
+    }
+  ]
+}
